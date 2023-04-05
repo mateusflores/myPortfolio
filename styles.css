@@ -1,6 +1,26 @@
+/* Personalizando elementos gerais */
+/* Paleta de cores: https://coolors.co/palette/d8f3dc-b7e4c7-95d5b2-74c69d-52b788-40916c-2d6a4f-1b4332-081c15 */
 * {
   padding: 0px;
   margin: 0px;
   background-color: #081c15;
   color: #d8f3dc;
+  font-family: "VT323", monospace;
+  font-size: 24px;
+}
+
+.titles {
+  font-family: "Silkscreen", cursive;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Cabeçalho */
+header {
+  margin: 8px;
+
+  display: flex;
+  justify-content: space-between;
 }
