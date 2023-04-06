@@ -3,24 +3,68 @@
 * {
   padding: 0px;
   margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
   background-color: #081c15;
   color: #d8f3dc;
-  font-family: "VT323", monospace;
   font-size: 24px;
+  font-family: "VT323", monospace;
+
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
 .titles {
   font-family: "Silkscreen", cursive;
+  text-align: center;
+  color: #52b788;
 }
 
-ul {
-  list-style-type: none;
+section {
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #1b4332;
 }
 
 /* Cabeçalho */
 header {
   margin: 8px;
+}
 
+header ul {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.header-menu {
+  list-style-type: none;
+  font-size: 32px;
+}
+
+.header-menu:hover {
+  cursor: pointer;
+  color: #40916c;
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
+/* Seção Sobre mim*/
+.sobre-mim {
+  display: flex;
+  justify-content: space-around;
+
+  gap: 30px;
+}
+
+.sobre-mim img {
+  height: 300px;
+}
+
+@media (max-width: 900px) {
+  .sobre-mim {
+    flex-direction: column;
+  }
 }
